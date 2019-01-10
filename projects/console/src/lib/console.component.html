@@ -1,0 +1,15 @@
+<div class="console mat-app-background">
+  <div class="console-toolbar" *ngIf="!hideFilter && !hidePadlock">
+    <mat-form-field class="console-filter">
+      <input matInput autocomplete="off" [placeholder]="filterPlaceholder" />
+    </mat-form-field>
+
+    <span class="console-spacing"></span>
+
+    <button mat-icon-button class="console-padlock" (click)="lock()">
+      <mat-icon [attr.aria-label]="padlockAriaLabel">
+        {{ padlockIcon }}
+      </mat-icon>
+    </button>
+  </div>
+</div>

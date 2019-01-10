@@ -1,0 +1,11 @@
+@import "~@angular/material/theming";
+
+@mixin angular-material-console-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $background: map-get($theme, background);
+
+  .mat-console {
+    background-color: mat-color($background);
+  }
+}

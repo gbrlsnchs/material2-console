@@ -1,0 +1,7 @@
+{
+  "name": "@ngmodule/console",
+  "version": "0.1.0",
+  "peerDependencies": {
+    "@angular/material": "^7.1.0"
+  }
+}

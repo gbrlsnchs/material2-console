@@ -9,14 +9,21 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noUnusedLocals": true,
     "importHelpers": true,
     "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2018",
-      "dom"
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "@ngmodule/console": ["dist/console"],
+      "@ngmodule/console/*": ["dist/console/*"]
+    },
+    "plugins": [
+      { "name": "@angular/language-service" },
+      {
+        "name": "tslint-language-service",
+        "alwaysShowRuleFailuresAsWarnings": true
+      }
     ]
   }
 }
